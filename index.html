@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCart | E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="#" class="logo">Nova<span>Cart</span></a>
+
+  <button id="cartBtn" class="cart-button">
+    🛒 Cart <span id="cartCount">0</span>
+  </button>
+</header>
+
+<main>
+
+<section class="hero">
+  <div>
+    <p class="eyebrow">MODERN E-COMMERCE</p>
+
+    <h1>
+      Shop smarter.<br>
+      <span>Live better.</span>
+    </h1>
+
+    <p class="hero-text">
+      A responsive e-commerce website with product search,
+      category filters, shopping cart and dynamic pricing.
+    </p>
+
+    <a href="#products" class="primary-btn">
+      Explore Products
+    </a>
+  </div>
+</section>
+
+
+<section id="products" class="products-section">
+
+  <div class="section-header">
+
+    <div>
+      <p class="eyebrow">OUR COLLECTION</p>
+      <h2>Featured Products</h2>
+    </div>
+
+    <input
+      id="searchInput"
+      type="search"
+      placeholder="Search products..."
+    >
+
+  </div>
+
+
+  <div class="filters" id="filters">
+
+    <button class="active" data-category="All">
+      All
+    </button>
+
+    <button data-category="Electronics">
+      Electronics
+    </button>
+
+    <button data-category="Fashion">
+      Fashion
+    </button>
+
+    <button data-category="Accessories">
+      Accessories
+    </button>
+
+  </div>
+
+
+  <div id="productGrid" class="product-grid"></div>
+
+</section>
+
+</main>
+
+
+<!-- Shopping Cart -->
+
+<aside id="cartPanel" class="cart-panel">
+
+  <div class="cart-header">
+
+    <div>
+      <p class="eyebrow">YOUR BAG</p>
+      <h2>Shopping Cart</h2>
+    </div>
+
+    <button id="closeCart" class="close-btn">
+      ✕
+    </button>
+
+  </div>
+
+
+  <div id="cartItems" class="cart-items"></div>
+
+
+  <div class="cart-footer">
+
+    <div class="total-row">
+      <span>Total</span>
+      <strong id="cartTotal">₹0</strong>
+    </div>
+
+    <button
+      id="checkoutBtn"
+      class="primary-btn checkout-btn"
+    >
+      Demo Checkout
+    </button>
+
+  </div>
+
+</aside>
+
+
+<div id="overlay" class="overlay"></div>
+
+
+<footer>
+  NovaCart — HTML • CSS • JavaScript E-Commerce Project
+</footer>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
